@@ -2178,7 +2178,7 @@ wait(4)
         else
             print("Invalid game ID input")
         end
-        wait(7) 
+        wait(20) 
         OrionLib:MakeNotification({
 	Name = "Teleport Failed",
 	Content = "Wrong Game Id",
