@@ -19,11 +19,11 @@ local Section = Tab:AddSection({
 })
 
 local Section = Tab:AddSection({
-	Name = "Version 1.0.8"
+	Name = "Version 1.0.8.05"
 })
 
 Tab:AddParagraph("Updates","Updates below")
-Tab:AddParagraph("Added","Added new Tab :Info & Execute Tab:")
+Tab:AddParagraph("Tab Added","Added new Tab :Game Tab:")
 
 Tab:AddParagraph("Script Hub","")
 
@@ -33,9 +33,9 @@ Tab:AddParagraph("Fe & Mobile","")
 
 Tab:AddParagraph("Others","")
 
-Tab:AddParagraph("Visuals","Added :Gunjourer:")
+Tab:AddParagraph("Visuals","")
 
-Tab:AddParagraph("Settings","Added :Keyboard v2:")
+Tab:AddParagraph("Settings","")
 
 Tab:AddParagraph("Removed","")
 
@@ -2030,7 +2030,7 @@ Tab:AddDropdown({
 -- OVER HERE IS THE VISUAL TAB
 
 local Tab = Window:MakeTab({
-	Name = "Visual Tab",
+	Name = "Visual",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -2137,6 +2137,88 @@ Tab:AddDropdown({
 	Callback = function(Value)
 		getgenv().SelectPlayerVis = Value
 	end    
+})
+
+-- OVER HERE IS GAME TAB
+
+-- OVER HERE IS GAME TAB
+
+-- OVER HERE IS GAME TAB
+
+-- OVER HERE IS GAME TAB
+
+-- OVER HERE IS GAME TAB
+
+local Tab = Window:MakeTab({
+	Name = "Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Teleport Game Section"
+})
+
+Tab:AddTextbox({
+    Name = "Game Id",
+    Default = "",
+    TextDisappear = true,
+    Callback = function(Value)
+    OrionLib:MakeNotification({
+	Name = "Teleporting",
+	Content = "Loading . . .",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(4) 
+        local gameId = tonumber(Value)
+        if gameId then
+            game:GetService("TeleportService"):Teleport(gameId)
+        else
+            print("Invalid game ID input")
+        end
+        wait(7) 
+        OrionLib:MakeNotification({
+	Name = "Teleport Failed",
+	Content = "Wrong Game Id",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Local Player Game Section"
+})
+
+Tab:AddButton({
+	Name = "Rejoin",
+	Callback = function()
+      		OrionLib:MakeNotification({
+	Name = "Rejoining...",
+	Content = "Loading . . .",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(1.5) 
+OrionLib:MakeNotification({
+	Name = "Rejoined!",
+	Content = "Success",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(0.5) 
+local player = game.Players.LocalPlayer
+local placeId = game.PlaceId
+
+local TeleportService = game:GetService("TeleportService")
+
+TeleportService:Teleport(placeId, player)
+
+  	end    
 })
 
 -- OVER HERE IS THE SETTINGS TAB
@@ -2694,18 +2776,6 @@ getgenv().SelectConfig = "nil"
 getgenv().SelectOther = "nil"
 getgenv().SelectBtoolsVer = "nil"
 getgenv().SelectPlayerVis = "nil"
-
-
-
--- Tab Lines
-
--- 42 = Script Hub
--- 115 = Info & Execute
--- 1660 = Fe Panel
--- 1800 = Fe & Mobile
--- 1914 = Others
--- 1979 = Visual
--- 2099 = Settings
 
 
 OrionLib:Init()
