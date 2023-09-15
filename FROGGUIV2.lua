@@ -1,12 +1,52 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Frog Gui V2 🐸", HidePremium = false, SaveConfig = true, IntroText = "Frog Gui V2"})
+
+wait(1) 
+
 OrionLib:MakeNotification({
-	Name = "Frog Gui v2",
-	Content = "Welcome to Frog gui v2 hope u like it "..Player.Name.." ", 
+	Name = "1/4",
+	Content = "Loading Frog Gui v2 Tabs. . .",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+
+wait(1) 
+
+OrionLib:MakeNotification({
+	Name = "2/4",
+	Content = "Loading Dropdowns, Toggle, Buttons, TextBox. . .",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+
+wait(1) 
+
+OrionLib:MakeNotification({
+	Name = "3/4",
+	Content = "Loading Section, Paragraph. . .",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+
+wait(1) 
+
+OrionLib:MakeNotification({
+	Name = "4/4",
+	Content = "Loading Frog Gui v2. . .",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(4) 
+
+OrionLib:MakeNotification({
+	Name = "Success!",
+	Content = "Enjoy your Frog gui v2 hope u like it "..Player.Name.." ", 
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
+
+local Window = OrionLib:MakeWindow({Name = "Frog Gui V2 🐸", HidePremium = false, SaveConfig = true, IntroText = "Frog Gui V2"})
 
 local Tab = Window:MakeTab({
 	Name = "Home",
@@ -37,56 +77,8 @@ Tab:AddParagraph("Visuals","")
 
 Tab:AddParagraph("Settings","")
 
-Tab:AddParagraph("Removed","")
+Tab:AddParagraph("Removed","Removed :Script Hub:")
 
--- OVER HERE IS THE SCRIPT HUB TAB
-
--- OVER HERE IS THE SCRIPT HUB TAB
-
--- OVER HERE IS THE SCRIPT HUB TAB
-
--- OVER HERE IS THE SCRIPT HUB TAB
-
--- OVER HERE IS THE SCRIPT HUB TAB
-
-local Tab = Window:MakeTab({
-	Name = "Script Hub",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Script Hub"
-})
-
-Tab:AddParagraph("Frog 🐸","All are made by me")
-
-Tab:AddButton({
-	Name = "Load Script",
-	Callback = function()
-	OrionLib:MakeNotification({
-	Name = "Executed!",
-	Content = "Loading . . .",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-wait(2)
-      if getgenv().SelectScriptHub == "Elemental Grind Game" then
-      loadstring(game:HttpGet(('https://raw.githubusercontent.com/xxsfytd/Scripts2/main/EGG.lua')))()
-      
-      end
-  	end    
-})
-
-Tab:AddDropdown({
-	Name = "Select Script",
-	Default = "Empty",
-	Options = {"Elemental Grind Game",},
-	Callback = function(Value)
-		getgenv().SelectScriptHub = Value
-	end    
-})
 
 local Section = Tab:AddSection({
 	Name = "Old"
@@ -288,6 +280,50 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+elseif Value:lower() == "why did u remove script hub" then
+OrionLib:MakeNotification({
+	Name = "Hello!",
+	Content = "Oh why did i?",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(4) 
+
+OrionLib:MakeNotification({
+	Name = "Info",
+	Content = "The reason i did its because.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(4) 
+
+OrionLib:MakeNotification({
+	Name = "Info",
+	Content = "Of the school i cant create anymore.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(4) 
+
+OrionLib:MakeNotification({
+	Name = "Info",
+	Content = "Hey atleast its a fun Universal Script ya know.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+wait(4) 
+
+OrionLib:MakeNotification({
+	Name = "The End",
+	Content = "And there u have it.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 end
 	end	  
 })
@@ -305,6 +341,10 @@ local Section = Tab:AddSection({
 })
 
 local Section = Tab:AddSection({
+	Name = "why did u remove script hub"
+})
+
+local Section = Tab:AddSection({
 	Name = "Execute Section"
 })
 
@@ -318,10 +358,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -337,10 +377,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -356,10 +396,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -375,10 +415,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -394,10 +434,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -413,10 +453,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -432,10 +472,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -451,10 +491,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -470,10 +510,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -490,10 +530,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -509,10 +549,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -528,10 +568,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -547,10 +587,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -566,10 +606,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -585,10 +625,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -605,10 +645,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -625,10 +665,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -645,10 +685,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -664,10 +704,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -683,10 +723,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -702,10 +742,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -721,10 +761,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -740,10 +780,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -759,10 +799,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -778,10 +818,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -797,10 +837,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -816,10 +856,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -835,10 +875,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -854,10 +894,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -873,10 +913,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -892,10 +932,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -911,10 +951,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -930,10 +970,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -949,10 +989,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -968,10 +1008,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -987,10 +1027,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1006,10 +1046,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1025,10 +1065,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1045,10 +1085,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1064,10 +1104,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1083,10 +1123,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1102,10 +1142,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1121,10 +1161,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...!",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed",
 	Content = "All set",
@@ -1140,10 +1180,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1159,11 +1199,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
-
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "Press L key to toggle",
@@ -1206,10 +1245,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1240,10 +1279,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1271,16 +1310,16 @@ HideAllPlayers()
 
 elseif Value:lower() == "hide prompts" then
 OrionLib:MakeNotification({
-	Name = "Executed!",
+	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(1.5) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
-	Content = "Gamepasses and Ugc Invisible",
+	Content = "All Gamepasses and Ugc are Invisible",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -1295,24 +1334,16 @@ end
 
 elseif Value:lower() == "show prompts" then
 OrionLib:MakeNotification({
-	Name = "Executed!",
+	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(1.5) 
-OrionLib:MakeNotification({
-	Name = "Executing..",
-	Content = "Gamepasses and Ugc Visible",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
-	Content = "All set",
+	Content = "All Gamepass and Ugc are Visible",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -1330,10 +1361,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "Cant be undo rejoin to undo.",
@@ -1355,10 +1386,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1374,10 +1405,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1439,10 +1470,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1458,10 +1489,10 @@ OrionLib:MakeNotification({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1471,9 +1502,6 @@ OrionLib:MakeNotification({
 
 wait(1.5) 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
-
-
-
 
 
 
@@ -1729,10 +1757,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1780,10 +1808,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1824,10 +1852,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1851,13 +1879,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/S
 -- OVER HERE IS THE FE & MOBILE TAB
 
 local Tab = Window:MakeTab({
-	Name = "Fe & Mobile",
+	Name = "Fe Troll & Mobile",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "Fe Section"
+	Name = "Fe Troll Section"
 })
 
 Tab:AddParagraph("Fe Scripts","Some of then can be used for mobile")
@@ -1869,10 +1897,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1887,7 +1915,7 @@ wait(1.5)
       loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
       elseif getgenv().SelectFe == "Toggle Fling" then
       loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
-      elseif getgenv().SelectFe == "Chat Troll" then
+      elseif getgenv().SelectFe == "Chat Hax" then
       loadstring(game:HttpGet(('https://pastefy.app/zCFEwaYq/raw'),true))()
       elseif getgenv().SelectFe == "Toggle Noclip" then
       loadstring(game:HttpGet(('https://pastebin.com/raw/6T4skKuj')))()
@@ -1897,7 +1925,6 @@ wait(1.5)
       loadstring(game:HttpGet("https://pastebin.com/raw/uUtRsAX5"))()
       elseif getgenv().SelectFe == "Click To Fling" then
       loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
-      
       end
   	end    
 })
@@ -1924,10 +1951,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -1983,10 +2010,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2048,10 +2075,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2091,10 +2118,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2168,10 +2195,10 @@ Tab:AddTextbox({
 	Name = "Teleporting",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 18
 })
 
-wait(4) 
+wait(1) 
         local gameId = tonumber(Value)
         if gameId then
             game:GetService("TeleportService"):Teleport(gameId)
@@ -2199,10 +2226,10 @@ Tab:AddButton({
 	Name = "Rejoining...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(1.5) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Rejoined!",
 	Content = "Success",
@@ -2282,10 +2309,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2305,10 +2332,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2328,10 +2355,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2351,10 +2378,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2378,10 +2405,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2401,10 +2428,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2428,10 +2455,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set press L key to toggle",
@@ -2485,10 +2512,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2524,10 +2551,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
@@ -2569,10 +2596,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set hides gamepass and ugc",
@@ -2598,10 +2625,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set shows gamepass and ugc",
@@ -2631,10 +2658,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set cant undo except rejoining",
@@ -2667,10 +2694,10 @@ Tab:AddButton({
 	Name = "Executing...",
 	Content = "Loading . . .",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 2
 })
 
-wait(4) 
+wait(1) 
 OrionLib:MakeNotification({
 	Name = "Executed!",
 	Content = "All set",
